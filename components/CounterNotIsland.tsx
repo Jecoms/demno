@@ -13,7 +13,7 @@ export default function Counter(props: CounterProps) {
   const btn = tw`px-2 py-1 border(gray-100 1) hover:bg-gray-200`;
   return (
     <div class={tw`flex gap-2 w-full`}>
-      <p class={tw`flex-grow-1 font-bold text-xl`}>(This is on an island) {count}</p>
+      <p class={tw`flex-grow-1 font-bold text-xl`}>(This isn't on an island) {count}</p>
       <button
         class={btn}
         onClick={() => setCount(count - 1)}

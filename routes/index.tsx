@@ -2,8 +2,9 @@
 import { h } from "preact";
 import { tw } from "@twind";
 import Counter from "../islands/Counter.tsx";
-// import CypressTestsCounter from "../islands/CypressTestsCounterInIslands.tsx";
-import CypressTestsCounter from "../components/CypressTestsCounter.tsx";
+import CounterNotIsland from "../components/CounterNotIsland.tsx";
+import CypressTestsCounter from "../islands/CypressTestsCounterInIslands.tsx";
+// import CypressTestsCounter from "../components/CypressTestsCounter.tsx";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
         file, and refresh.
       </p>
       <Counter start={3} />
+      <br />
+      <CounterNotIsland start={3} />
       <br />
       <CypressTestsCounter testCount={58} />
     </div>
